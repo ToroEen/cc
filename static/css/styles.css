@@ -9,6 +9,7 @@ body {
   overflow: hidden;
   width: 100vw;
   height: 100vh;
+  font-family: Calibri;
 }
 
 .blue {
@@ -54,12 +55,22 @@ body {
 }
 .input {
   height: 100%;
-  flex: 90%;
+  flex: 85%;
   margin: 0px 5px 0px 0px;
+  display: flex;
 }
 .data {
-  flex: 10%;
+  flex: 15%;
   margin: 0px 0px 0px 5px;
+  overflow-y: scroll;
+}
+.line-counter {
+  flex: 5%;
+  width: 5%;
+}
+.code-editor {
+  flex: 95%;
+  width: 95%;
 }
 textarea {
   padding: 0px;
@@ -71,6 +82,8 @@ textarea {
   resize: none;
   font-size: 15px;
   color: #fff;
+  overflow: scroll;
+  white-space: nowrap;
 }
 textarea:focus {
   outline: none;
@@ -80,4 +93,7 @@ textarea:focus {
   position: fixed;
   bottom: 10%;
   width: 75%;
+}
+.info h1 {
+  margin-top: 0px;
 }
