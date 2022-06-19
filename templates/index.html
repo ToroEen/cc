@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
   
   <script src="{{ url_for('static', filename='js/editor.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/select.js') }}"></script>
 </head>
 <body onload="editor_start()" class="blue">
 
@@ -30,7 +31,19 @@
   <div class="field info">
     <h1>Settings</h1>
     
-  </div>
+    <div class="setting-options-values-item">     
+      <div class="custom-select" style="width: 50%;">
+        <select>
+          <option value="default">Background</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+          <option value="pink">Pink</option>
+          <option value="purple">Purple</option>
+          <option value="yellow">Yellow</option>
+        </select>
+      </div>   
+    </div>
 
+  </div>
 </body>
 </html>
