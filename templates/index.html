@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Code Counter</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  
+  <script src="{{ url_for('static', filename='js/editor.js') }}"></script>
+</head>
+<body onload="editor_start()" class="blue">
+
+  <div class="code-input">
+    <div class="top"></div>
+    <div class="code">
+      <div class="code-item input field">
+        <textarea placeholder="Code..." onchange="editor_update(this.value)" id="input"></textarea>
+      </div>
+      <div class="code-item data field">
+        hey
+      </div>
+    </div>
+  </div>
+
+  <div class="field info">
+    [ : <span id="square_left">0</span>
+  </div>
+
+</body>
+</html>

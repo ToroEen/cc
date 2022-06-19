@@ -1,0 +1,83 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.blue {
+  background-color: #63a4ff;
+  background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+}
+.green {
+  background-color: #89d8d3;
+  background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+}
+.pink {
+  background-color: #7F7FD5;
+  background-image: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+}
+.purple {
+  background-color: #7f53ac;
+  background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+}
+.yellow {
+  background-color: #f39f86;
+  background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
+}
+
+.field {
+  background: #08172b;
+  opacity: 0.8;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.code-input {
+  margin: 5% 0;
+  height: 55%;
+  width: 75%;
+}
+.code {
+  display: flex;
+  height: 100%;
+}
+.code-item {
+  width: 100%;
+  height: 100%;
+}
+.input {
+  height: 100%;
+  flex: 90%;
+  margin: 0px 5px 0px 0px;
+}
+.data {
+  flex: 10%;
+  margin: 0px 0px 0px 5px;
+}
+textarea {
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  opacity: 1;
+  border: none;
+  resize: none;
+  font-size: 15px;
+  color: #fff;
+}
+textarea:focus {
+  outline: none;
+}
+
+.info {
+  position: fixed;
+  bottom: 10%;
+  width: 75%;
+}
