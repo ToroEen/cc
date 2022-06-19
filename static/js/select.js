@@ -25,6 +25,8 @@ document.addEventListener("DOMContentLoaded", function(e) {
             /* When an item is clicked, update the original select box,
             and the selected item: */
 
+
+            // All the code I added, the rest is w3school's
             const colors = ["blue", "green", "pink", "purple", "yellow"];
 
             colors.forEach(function(color) {
@@ -35,6 +37,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
                 document.body.classList.add(color);
               }
             });
+            // Stops here
 
           
             var y, i, k, s, h, sl, yl;

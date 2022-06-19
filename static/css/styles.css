@@ -1,6 +1,7 @@
 :root {
   --rad: 12px;
-  --bg-acc-alt: #08172b;
+  --bg-acc: #08172b;
+  --bg-acc-alt: #183458;
 }
 
 html {
