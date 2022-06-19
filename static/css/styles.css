@@ -2,6 +2,7 @@
   --rad: 12px;
   --bg-acc: #08172b;
   --bg-acc-alt: #183458;
+  --font-size: 16px;
 }
 
 html {
@@ -16,6 +17,7 @@ body {
   width: 100vw;
   height: 100vh;
   font-family: Calibri;
+  font-size: var(--font-size);
 }
 
 .blue {
@@ -49,7 +51,7 @@ body {
 .code-input {
   margin: 5% 0;
   height: 55%;
-  width: 75%;
+  width: 80%;
 }
 .code {
   display: flex;
@@ -58,17 +60,23 @@ body {
 .code-item {
   width: 100%;
   height: 100%;
+  display: flex;
 }
 .input {
   height: 100%;
   flex: 85%;
   margin: 0px 5px 0px 0px;
-  display: flex;
 }
 .data {
   flex: 15%;
   margin: 0px 0px 0px 5px;
   overflow-y: scroll;
+}
+.data .line-counter {
+  flex: 20%;
+}
+.data .code-editor {
+  flex: 80;
 }
 .line-counter {
   flex: 5%;
@@ -98,7 +106,7 @@ textarea:focus {
 .info {
   position: fixed;
   bottom: 10%;
-  width: 75%;
+  width: calc(80% - 40px); 
 }
 .info h1 {
   margin-top: 0px;
@@ -169,4 +177,9 @@ textarea:focus {
 }
 .select-items div:last-child {
   border-radius: 0px 0px var(--rad) var(--rad);
+}
+
+.warning {
+  background-color: yellow;
+  color: black;
 }
