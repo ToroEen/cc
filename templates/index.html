@@ -50,16 +50,17 @@
       </div>   
     </div>
 
-    <div id="options info-item">
-      <input type="radio" id="sb" name="b_option" value="sb" checked>
-      <label for="sb">Square brackets []</label><br>
-      <input type="radio" id="cb" name="b_option" value="cb">
-      <label for="cb">Curly brackets {}</label><br>
-      <input type="radio" id="rb" name="b_option" value="rb">
-      <label for="rb">Round brackets ()</label>
-      <input type="radio" id="ab" name="b_option" value="ab">
-      <label for="ab">Angle brackets &lt;&gt;</label>
+    <div class="info-item" id="options">
+      <button onclick="change_filter(this.id)" id="sb" class="clicked">Square Brackets []</button>
+      <button onclick="change_filter(this.id)" id="cb">Curly Brackets {}</button>
+      <button onclick="change_filter(this.id)" id="rb">Round Brackets ()</button>
+      <button onclick="change_filter(this.id)" id="ab">Angle Brackets &lt;&gt;</button>
+      <span class="total" id="total">[: 0 &emsp; ]: 0</span>
     </div>
+  </div>
+
+  <div class="hidden">
+    <input id="filter_input" value="sb">
   </div>
 </body>
 </html>
