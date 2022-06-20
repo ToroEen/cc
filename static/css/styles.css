@@ -188,7 +188,7 @@ span.total {
 }
 
 .warning {
-  background-color: yellow;
+  background: yellow !important;
   color: black;
 }
 

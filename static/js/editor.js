@@ -34,6 +34,12 @@ function editor_start() {
 
       total.innerHTML = filter_1 + ": " + (input.value.split(filter_1).length - 1).toString() + "&emsp;" + filter_2 + ": " + (input.value.split(filter_2).length - 1).toString();
 
+      if (input.value.split(filter_1).length - 1 !== input.value.split(filter_2).length - 1) {
+        total.classList.add("warning");
+      } else if (total.classList.contains("warning")) {
+        total.classList.remove("warning");
+      }
+
       new_line.innerHTML = filter_1 + ": " + value_1.toString() + " &emsp; " + filter_2 + ": " + value_2.toString();
       
       if (value_1 !== value_2) {
